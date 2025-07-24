@@ -37,7 +37,7 @@ app.use('/reset-password', resetPasswordRouter);
 app.use('/wishlist', wishlistRoutes);
 app.use('/api/seed', require('./routes/itemsSeed'));
 app.use(cors({
-  origin: 'http://localhost:5173',// 👈 Allow this origin
+  origin: 'http://localhost:5173/',// 👈 Allow this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true  
 })); // ✅ Enable CORS

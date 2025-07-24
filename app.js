@@ -36,7 +36,10 @@ app.use('/forgot-password', forgotPasswordRouter);
 app.use('/reset-password', resetPasswordRouter);
 app.use('/wishlist', wishlistRoutes);
 app.use('/api/seed', require('./routes/itemsSeed'));
-app.use(cors()); // ✅ Enable CORS
+app.use(cors({
+  origin: 'http://localhost:5173', // 👈 Allow this origin
+  credentials: true  
+})); // ✅ Enable CORS
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

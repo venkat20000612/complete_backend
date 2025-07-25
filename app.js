@@ -19,7 +19,7 @@ var app = express();
 
 
 app.use(cors({
-  origin: 'https://statuesque-cobbler-dc91c2.netlify.app', // 👈 Allow this origin
+  origin: 'https://creative-elf-569885.netlify.app', // 👈 Allow this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true  
 })); // ✅ Enable CORS

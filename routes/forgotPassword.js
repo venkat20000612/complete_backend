@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
             }
         });
 
-        const resetUrl = `https://statuesque-cobbler-dc91c2.netlify.app/reset-password/${token}`;
+        const resetUrl = `https://creative-elf-569885.netlify.app/reset-password/${token}`;
 
         const mailOptions = {
             to: user.email,

@@ -19,7 +19,7 @@ var app = express();
 
 
 app.use(cors({
-  origin: 'https://prismatic-meringue-73299d.netlify.app/', // 👈 Allow this origin
+  origin: 'https://prismatic-meringue-73299d.netlify.app', // 👈 Allow this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true  
 })); // ✅ Enable CORS

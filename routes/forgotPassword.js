@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
             }
         });
 
-        const resetUrl = `http://localhost:3000/reset-password/${token}`;
+        const resetUrl = `https://prismatic-meringue-73299d.netlify.app/reset-password/${token}`;
 
         const mailOptions = {
             to: user.email,

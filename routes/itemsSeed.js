@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const Item = require('../models/Item');
 
-router.post('/seed', async (req, res) => {
+router.post('/', async (req, res) => {
     const items = [
         { title: "iPhone 14", description: "Apple Smartphone", price: 79999 },
         { title: "Laptop", description: "Dell 16GB RAM", price: 65999 },

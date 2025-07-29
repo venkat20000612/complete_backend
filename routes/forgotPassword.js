@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
             }
         });
 
-        const resetUrl = `https://cheery-frangipane-88d33c.netlify.app/reset-password/${token}`;
+        const resetUrl = `https://astounding-brigadeiros-490b31.netlify.app/reset-password/${token}`;
 
         const mailOptions = {
             to: user.email,

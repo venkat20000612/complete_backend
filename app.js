@@ -14,12 +14,13 @@ const login = require('./routes/login');
 const forgotPasswordRouter = require('./routes/forgotPassword');
 const resetPasswordRouter = require('./routes/resetPassword');
 const wishlistRoutes = require('./routes/wishlist');
+const products = require('./routes/itemsSeed');
 const cors = require('cors'); // ✅ Require CORS
 var app = express();
 
 
 app.use(cors({
-  origin: 'https://cheery-frangipane-88d33c.netlify.app', // 👈 Allow this origin
+  origin: 'https://astounding-brigadeiros-490b31.netlify.app', // 👈 Allow this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true  
 })); // ✅ Enable CORS
@@ -43,7 +44,7 @@ app.use('/login', login);
 app.use('/forgot-password', forgotPasswordRouter);
 app.use('/reset-password', resetPasswordRouter);
 app.use('/wishlist', wishlistRoutes);
-app.use('/api/seed', require('./routes/itemsSeed'));
+app.use('/products', products);
 
 
 // catch 404 and forward to error handler

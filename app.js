@@ -19,7 +19,7 @@ var app = express();
 
 
 app.use(cors({
-  origin: 'https://rad-parfait-c0d805.netlify.app', // 👈 Allow this origin
+  origin: 'https://cheery-frangipane-88d33c.netlify.app', // 👈 Allow this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true  
 })); // ✅ Enable CORS

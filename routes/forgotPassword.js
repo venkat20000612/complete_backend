@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
             }
         });
 
-        const resetUrl = `https://rad-parfait-c0d805.netlify.app/reset-password/${token}`;
+        const resetUrl = `https://cheery-frangipane-88d33c.netlify.app/reset-password/${token}`;
 
         const mailOptions = {
             to: user.email,
